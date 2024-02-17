@@ -1,0 +1,17 @@
+<div class="main">
+    <div class="item" *ngFor="let item of list; let index=index">
+        <div class="name">{{item.name}}</div>
+        <div class="list-actions">
+            <div class="delete" (click)="delete(index)">
+                <span>حذف</span>
+                <i class="fa fa-trash" aria-hidden="true"></i>
+            </div>
+            <div class="edit" (click)="edit(index)">
+                <span>تعديل</span>
+                <i class="fas fa-edit"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+<record-details-cmp (onSave)="get()" [selectedItem]="selectedItem"></record-details-cmp>

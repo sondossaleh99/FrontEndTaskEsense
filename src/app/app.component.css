@@ -1,0 +1,27 @@
+#main {
+    display: grid;
+    grid-template-areas:
+    'hd hd hd hd hd hd'
+    'nav nav nav nav nav nav'
+    'content content content content content bar';
+}
+
+.app-content {
+    grid-area: content;
+    position: relative;
+}
+
+.header{
+    grid-area: hd;
+    position: relative;
+}
+
+.nav-bar{
+    grid-area: nav;
+    position: relative;
+}
+
+.side-bar{
+    grid-area: bar;
+    position: relative;
+}

@@ -1,0 +1,42 @@
+.main {
+    position: absolute;
+    padding: 10px;
+    height: calc(100vh - 144px);
+    width: -webkit-fill-available;
+    overflow-y: scroll;
+
+    .item {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 16px;
+        border: 1px solid #ccc;
+        box-shadow: 0px 1px 2px 0 rgb(167 170 172 / 20%);
+        margin-bottom: 8px;
+
+        .name {
+            font-size: 16px;
+        }
+
+        .list-actions {
+            display: flex;
+            border-right: 1px solid #ccc;
+
+            span {
+                margin-right: 6px;
+            }
+
+            .delete {
+                cursor: pointer;
+                margin: 0px 16px;
+                color: red;
+            }
+            .edit {
+                cursor: pointer;
+                margin: 0px 16px;
+                color: #008CBA;
+            }
+        }
+    }
+}

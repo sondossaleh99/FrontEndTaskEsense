@@ -1,0 +1,25 @@
+<div #myModal class="modal-container">
+    <div class="modal-content">
+        <div class="modal-header">
+            <i class="fa fa-close fa-xl" (click)="close()"></i>
+            <h3>{{modalTitle}}</h3>
+        </div>
+        <div class="modal-body">
+            <form [formGroup]="form">
+                <div class="name-field">
+                    <label for="name" class="required">الاسم</label>
+                    <input [ngClass]="{'has-error':!name.valid && name.touched}"
+                    type="text" id="name" placeholder="ادخل الاسم او العينة" formControlName="name">
+                </div>
+                <div class="details-field">
+                    <label for="details">التفاصيل</label>
+                    <input type="text" id="details" placeholder="ادخل تفاصيل العينه" formControlName="details">
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button class="close" type="button" (click)="close()">الغاء</button>
+            <button class="save" type="submit" (click)="save()">حفظ</button>
+        </div>
+    </div>
+</div>

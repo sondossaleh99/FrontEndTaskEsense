@@ -1,0 +1,23 @@
+ul {
+    display: flex;
+    background-color: #2b2d2e;
+    justify-content: end;
+
+    li {
+        a {
+            padding: 10px 20px;
+            display: block;
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            transition: 0.3s;
+            position: relative;
+        }
+
+        a.active, a:hover {
+            background-color: #444647;
+            border-bottom: 3px solid white;
+            box-shadow: inset 0 0 10px #5e5e5e
+        }
+    }
+}

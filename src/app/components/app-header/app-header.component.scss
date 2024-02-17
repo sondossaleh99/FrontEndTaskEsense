@@ -1,0 +1,41 @@
+header {
+  margin: 0;
+  background-color: #313334;
+  color: white;
+  padding: 0px;
+}
+
+.header-contant {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #444647;
+  padding: 6px 0px;
+}
+
+.header-title {
+  padding: 6px 16px;
+  background-color: #2b2d2e;
+}
+
+.header-avatar {
+  margin-left: 28px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  .image-container {
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    border-radius: 4px;
+  }
+
+  .avatar {
+    margin: 0 auto;
+    margin-left: -25%;
+    height: 100%;
+    width: auto;
+  }
+}
